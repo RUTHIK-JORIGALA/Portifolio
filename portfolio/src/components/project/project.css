@@ -1,0 +1,40 @@
+.project{
+    height: 550px;
+    border-radius: 5px;
+    padding:8px ;
+    display: grid;
+    place-self: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: 0.25s linear;
+}
+.project:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transform: translateY(-5px);
+}
+.project-image-container{
+    height: 350px;
+    /* border: 1px solid gray; */
+}
+.project-cover-img{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    object-fit: contain;
+}
+.project>h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+}
+.project-description{
+    color: gray;
+    padding: 0 10px;
+}
+.tech-stack{
+    padding: 0 10px;
+}
+.tech-stach-heading{
+    color: crimson;
+    font-weight: bold;
+}

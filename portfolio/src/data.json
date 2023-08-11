@@ -1,0 +1,46 @@
+{
+    "skills":[
+        {
+            "imageUrl":"./Images/javascript.png",
+            "skill_name":"JavaScript"
+        },
+        {
+            "imageUrl":"./Images/react.png",
+            "skill_name":"React"
+        },
+        {
+            "imageUrl":"./Images/mongodb.jpg",
+            "skill_name":"MongoDB"
+        },
+        {
+            "imageUrl":"./Images/expressjs.png",
+            "skill_name":"ExpressJs"
+        },
+        {
+            "imageUrl":"./Images/html.png",
+            "skill_name":"HTML"
+        },
+        {
+            "imageUrl":"./Images/css.png",
+            "skill_name":"css"
+        },
+        {
+            "imageUrl":"./Images/nodejs.png",
+            "skill_name":"NodeJs"
+        },
+        {
+            "imageUrl":"./Images/java.png",
+            "skill_name":"Java"
+        }
+    ],
+    "projects":[
+        {
+            "projectTitle":"Ecommerce",
+            "image":"./Images/ecom.png",
+            "description":"It is an E-commerce web application that makes online shopping easy and enjoyable for customers. This project  enable users to filter products based on prices and name ",
+            "techStack":"React, JavaScript, SCSS"
+        }
+    ]
+
+    
+}

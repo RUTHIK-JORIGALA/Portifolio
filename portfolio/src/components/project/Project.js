@@ -1,0 +1,25 @@
+import React from 'react'
+import './project.css'
+import { Link } from 'react-router-dom';
+
+const Project = ({project}) => {
+  // console.log(project.description)
+  const {projectTitle, description , image, techStack} = project;
+  return (
+    <div className='project'>
+      <Link to='https://ecom-9045d5.netlify.app/'>
+      <div className="project-image-container">
+        <img src={image} alt='projectCover' className='project-cover-img'/>
+
+      </div>
+      </Link>
+      <h3>{projectTitle}</h3>
+      <p className='project-description'>{description}</p>
+      <div className="tech-stack">
+        <span className='tech-stach-heading'>Tech Stack : </span><span>{techStack} </span>
+      </div>
+    </div>
+  )
+}
+
+export default Project

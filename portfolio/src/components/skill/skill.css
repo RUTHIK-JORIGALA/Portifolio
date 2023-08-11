@@ -1,0 +1,38 @@
+
+.skill{
+    width: 150px;
+    height: 150px;
+    padding: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.skill:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transform: translateY(-5px);
+}
+.skills-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+    align-items: center;
+}
+figure{
+    margin: 0;
+}
+figure>figcaption{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.skill-Image{
+    width: 120px;
+    height: 120px;
+}

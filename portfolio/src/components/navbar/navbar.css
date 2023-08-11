@@ -1,12 +1,16 @@
+
 .navbar{
+    width: 100%;
     background-color: aliceblue;
-    /* border-bottom: 2px solid black; */
+}
+.navbar-container{
     box-shadow: 0 4px 6px -2px gray;
     height: 70px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 1.5rem;
+    
 }
 .title-container{
     
@@ -16,6 +20,7 @@
     letter-spacing: 1.6px;
     color: cornflowerblue;
     font-family:cursive ;
+
 }
 .navigation-menu ul{
     display: flex;
