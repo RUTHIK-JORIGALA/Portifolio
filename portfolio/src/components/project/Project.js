@@ -10,7 +10,6 @@ const Project = ({project}) => {
       <Link to='https://ecom-9045d5.netlify.app/'>
       <div className="project-image-container">
         <img src={image} alt='projectCover' className='project-cover-img'/>
-
       </div>
       </Link>
       <h3>{projectTitle}</h3>

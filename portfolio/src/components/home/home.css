@@ -1,6 +1,8 @@
 section{
+    position: relative;
     background-color: aliceblue;
     width: 100%;
+    top: 60px;
     
 }
 .home-container{
@@ -16,8 +18,12 @@ section{
     width: 100%;
 }
 .home-text{
-text-align: left;
-font-family: open sans-serif
+    flex: 8;
+    text-align: left;
+    font-family: open sans-serif
+}
+.home-pic{
+    flex: 4;
 }
 .home-text>h3{
     font-size: 1.6rem;
@@ -50,30 +56,59 @@ font-family: open sans-serif
 }
 
 .home-pic{
-    position: relative;
     height: 300px;
-   
 }
 .homeProfilePic{
-    position: absolute;
     height: 300px;
     width: 300px;
     object-fit:scale-down;
     border-radius: 0 0 50px  50px ;
-    z-index: 10;
-    
 }
 
-.image-background{
-    margin-left: 150px;
-    z-index: 2;
-    height: 200px;
-    width: 250px;
-    border-radius: 50%;
-    background-color: crimson !important;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-29%);
+
+
+
+@media (max-width:768px) {
+    .home-container{
+       
+        padding-top: 50px;
+        gap: 1rem;
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+    .home-text>h1{
+        font-size: 3.5rem;
+        margin: 8px 0;
+    }
+    .text-amimate>span{
+        font-size: 3.0rem;
+        
+    }
+}
+
+@media (max-width:450px){
+    .home-container{
+        height: 100vh;
+        margin-bottom: 20px;
+    }
+    .home-text{
+        display: flex;
+        flex-direction: column;
+        padding-left:0 10px;
+    }
+    
+
+    .home-text>h1{
+        font-size: 4rem;
+    }
+    .text-amimate>span{
+        font-size: 4rem;
+    }
+   
     
 }
