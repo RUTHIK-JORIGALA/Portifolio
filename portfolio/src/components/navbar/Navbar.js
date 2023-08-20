@@ -4,8 +4,6 @@ import {NavLink } from 'react-router-dom'
 import {IoReorderThreeOutline ,IoCloseOutline} from 'react-icons/io5'
 const Navbar = () => {
   const [mobileMenu,setMobileMenu] = useState(false);
-  const [optionsDisplay, setOptionsDisplay] = useState('nav-menu');
-  
   const  handleHidden = () =>{
     setMobileMenu(false);
   } 
@@ -24,7 +22,7 @@ const Navbar = () => {
           <h3>Ruthik</h3>
         </div>
         <div className="navigation-menu">
-          {/* <ul className={`nav-menu ${mobileMenu ? "":"hide"}`}> */}
+          
           <ul className={`nav-menu ${mobileMenu ? "":"hide"}`} onClick={handleHidden}>
               <NavLink to='/' className='link'><li className='menu-name'>Home</li></NavLink>
               <NavLink to='/skills' className='link'><li>Skills</li></NavLink>

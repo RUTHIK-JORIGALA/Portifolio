@@ -1,35 +1,54 @@
-import React from 'react'
-import './contact.css'
+
+import React from 'react';
+import { useForm, ValidationError } from '@formspree/react';
+import './contact.css';
+
 const Contact = () => {
+  const [state, handleSubmit] = useForm("xoqodveo");
+  if (state.succeeded) {
+      return <p className='successful'>Thanks for contacting</p>;
+  }
   return (
-    <div className='contact'>
-      <h3>Contact me!</h3>
-      <form >
-        <fieldset className='contactFieldset'>
-          <legend>Name</legend>
-          <input className='contactInput'/>
-        </fieldset>
-        <fieldset className='contactFieldset'>
-          <legend>Email</legend>
-          <input className='contactInput'/>
-        </fieldset >
-        <fieldset className='contactFieldset'>
-          <legend>Mobile No</legend>
-          <input className='contactInput'/>
-        </fieldset >
-        <fieldset className='contactFieldset'>
-          <legend>Subject</legend>
-          <input className='contactInput'/>
-        </fieldset>
-        <fieldset className='contactFieldset'>
-          <legend>Message</legend>
-          <textarea className='contactInput' rows="5"/>
-        </fieldset>
-        
-        <button className='btn'>Send Message</button>
-      </form>
+    <div className="contact">
+      <h1>Contact me!</h1>
+    <form onSubmit={handleSubmit}>
+      <label htmlFor="name">
+        Full Name
+      </label>
+      <input
+        id="name"
+        type="text" 
+        name="name" placeholder='first and last'
+        />
+      <label htmlFor="email">
+        Email Address
+      </label>
+      <input
+        id="email"
+        type="email" 
+        name="email" placeholder='name@gmail.com'
+        />
+      <ValidationError 
+        prefix="Email" 
+        field="email"
+        errors={state.errors}
+        />
+        <br/>
+      <textarea
+        id="message"
+        name="message" placeholder='Write a message'
+        />
+      <ValidationError 
+        prefix="Message" 
+        field="message"
+        errors={state.errors}
+        />
+      <button className='btn' type="submit" disabled={state.submitting}>
+        Send Message
+      </button>
+    </form>
     </div>
-  )
+  );
 }
 
 export default Contact
