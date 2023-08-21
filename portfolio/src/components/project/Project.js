@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom';
 
 const Project = ({project}) => {
   // console.log(project.description)
-  const {projectTitle, description , image, techStack} = project;
+  const {projectTitle, description , image, techStack , projectLink} = project;
   return (
     <div className='project'>
-      <Link to='https://ecom-9045d5.netlify.app/'>
-      <div className="project-image-container">
-        <img src={image} alt='projectCover' className='project-cover-img'/>
-      </div>
+      <Link to={projectLink}>
+        <div className="project-image-container">
+          <img src={image} alt='projectCover' className='project-cover-img'/>
+        </div>
       </Link>
       <h3>{projectTitle}</h3>
       <p className='project-description'>{description}</p>

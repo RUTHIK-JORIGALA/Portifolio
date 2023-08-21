@@ -34,11 +34,13 @@
         }
     ],
     "projects":[
+        
         {
-            "projectTitle":"Ecommerce",
-            "image":"./Images/ecom.png",
-            "description":"It is an E-commerce web application that makes online shopping easy and enjoyable for customers. This project  enable users to filter products based on prices and name ",
-            "techStack":"React, JavaScript, SCSS"
+            "projectTitle":"SunnyNews",
+            "image":"./Images/sunnyNews.png",
+            "description":"Discover the Ultimate sunnyNews – your one-stop news app for sports, education, and business updates. From thrilling sports highlights to educational insights and business trends, stay informed. Our app features a powerful search filter, ensuring easy access to your desired content across categories.",
+            "techStack":"React, JavaScript, CSS",
+            "projectLink":"https://sunnynews-raj.netlify.app"
         }
     ]
 
